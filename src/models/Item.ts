@@ -33,8 +33,6 @@ export abstract class Item {
       return this.tipo;
   }
   
-    // Método abstrato para calcular o desconto, implementado nas subclasses
-    abstract calcularDesconto(): number;
   
     // Método abstrato para exibir os detalhes do Item
     abstract detalhes(): string;

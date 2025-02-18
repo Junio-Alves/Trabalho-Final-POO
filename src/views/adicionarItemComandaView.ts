@@ -53,6 +53,8 @@ export function adicionarItemComandaView() {
         break;
     }
 
+    
+
     try {
         console.clear();
         comandaController.adicionarItemComanda(idComanda, item);

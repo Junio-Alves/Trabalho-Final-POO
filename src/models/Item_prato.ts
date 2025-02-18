@@ -8,18 +8,8 @@ export class ItemPrato extends Item {
       this.tamanho = tamanho;
     }
 
-  // Implementando o cálculo de desconto para bebidas
-  public calcularDesconto(): number {
-    if (this.tamanho === 'grande') {
-      return this.preco * 0.1; // Exemplo de desconto para tamanho grande
-    } else if (this.tamanho === 'pequeno') {
-      return this.preco * 0.05; // Exemplo de desconto para tamanho pequeno
-    }
-    return 0; // Nenhum desconto
-  }
-
   public detalhes(): string {
-    return `${this.nome} - Preço: R$${this.preco.toFixed(2)}`;
+    return `Nome: ${this.nome} - Preço: R$${this.preco.toFixed(2)} - Tamanho: ${this.tamanho} - Tipo: ${this.tipo}`;
   }
 
   public getTamanho(): string {
