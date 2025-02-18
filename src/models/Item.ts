@@ -8,7 +8,8 @@ export abstract class Item {
     constructor(
       protected nome: string,
       protected preco: number,
-      protected tipo: tipoItem
+      protected tipo: tipoItem,
+      protected tamanho: string
     ) {}
   
     getNome(): string {
@@ -31,8 +32,11 @@ export abstract class Item {
 
     getTipo(): string {
       return this.tipo;
-  }
-  
+    }
+    
+    getTamanho(): string {
+      return this.tamanho;
+    }
   
     // Método abstrato para exibir os detalhes do Item
     abstract detalhes(): string;

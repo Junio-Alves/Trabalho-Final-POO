@@ -1,11 +1,9 @@
 import { Item,tipoItem} from './Item';
 
 export class ItemSobremesa extends Item {
-  private tamanho: string;
 
   constructor(nome: string, preco: number, tamanho: string) {
-      super(nome, preco, tipoItem.SOBREMESA);
-      this.tamanho = tamanho;
+      super(nome, preco, tipoItem.SOBREMESA,tamanho);
     }
 
 

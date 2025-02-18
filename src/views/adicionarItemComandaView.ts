@@ -24,10 +24,9 @@ export function adicionarItemComandaView() {
     while (true) {
         console.clear();
         console.log("\nEscolha o tipo de item a adicionar:");
-        console.log("1. 🍽️ Prato");
+        console.log("1. 🍽️  Prato");
         console.log("2. 🍹 Bebida");
         console.log("3. 🍰 Sobremesa");
-    
         const tipo = parseInt(prompt("Digite o número da opção: "));
         switch (tipo) {
             case 1:

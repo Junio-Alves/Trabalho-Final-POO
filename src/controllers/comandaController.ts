@@ -50,7 +50,7 @@ export class ComandaController implements IComandaController {
         } else {
             let total = 0;
             itens.forEach((item, index) => {
-                console.log(`${index + 1}. ${item.getNome()} - ${item.getTipo()} - R$ ${item.getPreco().toFixed(2)}`);
+                console.log(`${index + 1}. ${item.getNome()} - ${item.getTipo()} - R$ ${item.getPreco().toFixed(2)} - Tamanho: ${item.getTamanho()}`);
                 total += item.getPreco(); // Acumula o preço total
             });
     
@@ -74,6 +74,7 @@ export class ComandaController implements IComandaController {
     }
 
     public exibirItensDisponiveis(tipo: number): void {
+        console.clear();
         console.log("\nItens Disponíveis para Adicionar à Comanda:");
         console.log("------------------------------------------");
     
